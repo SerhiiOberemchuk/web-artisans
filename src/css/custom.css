@@ -4,7 +4,25 @@
   padding-left: 16px;
   padding-right: 16px;
 }
-
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -16,4 +34,15 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.title_h1 {
+  font-family: Playfair Display;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.subtitle_h2 {
+  font-size: 32px;
+  line-height: 1.41; /* 140.625% */
+  text-transform: uppercase;
 }
