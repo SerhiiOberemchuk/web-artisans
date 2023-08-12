@@ -12,7 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5; /* 150% */
   color: var(--primary-brand-color);
   background-color: var(--white-background-color);
