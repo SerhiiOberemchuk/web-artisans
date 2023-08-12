@@ -1,21 +1,133 @@
 .header {
-  padding: 20px 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-color:#f7faff;
 }
 
-.nav-list {
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-menu {
+  display: none;
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+  color: #0A224A;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.mob-menu-top {
+  display: flex;
+  padding: 28px 16px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7faff;
+}
+
+.mob-menu-btn {
+  border: none;
+  background: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #0A224A;
+}
+
+.mob-menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 114px;
+}
+
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 27px;
+  }
+  .header-icon-logo {
+    width: 127px;
+  }
+  .header-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .header-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .mob-menu-top {
+    padding: 28px 32px 27px;
+  }
+  .mob-menu-icon {
+    width: 127px;
+  } 
+  .mob-menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .mob-open-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .mob-menu-nav {
+    margin-top: 150px;
+  }
+  .mob-menu-list {
+    gap: 30px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-navigation {
+    display: flex;
+    gap: 572px;
+  }
+  .header-menu {
+    display: flex;
+    gap: 30px;
+    
+  }
+  .header-btn {
+    display: none;
+  }
 }
