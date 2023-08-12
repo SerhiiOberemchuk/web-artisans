@@ -1,6 +1,16 @@
 .subs-section {
   padding: 64px 0;
 }
+@media screen and (min-width: 768px) {
+  .subs-section {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subs-section {
+    padding: 100px 0 86px 0;
+  }
+}
 .subs-box {
   max-width: 536px;
 }
@@ -8,26 +18,78 @@
   text-align: center;
   margin-bottom: 20px;
 }
-.subs-text {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .subs-subtitle {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subs-subtitle {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subs-text {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subs-text {
+    margin-bottom: 22px;
+  }
 }
 .sabs-input {
   width: 100%;
-  margin-bottom: 20px;
-  padding: 11px 20px;
+  padding: 12px 20px;
   background-color: transparent;
 }
-.sabs-input:hover,
-.sabs-input:focus {
+.sabs-input:hover {
   border-color: var(--primary-brand-color);
   color: var(--primary-brand-color);
 }
-.sabs-input:required {
+/* .sabs-input:required {
   border-color: var(--input-error-state);
+} */
+.subs-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .subs-wrapper {
+    margin-bottom: 22px;
+  }
+}
+.sabs-input:invalid:not(:placeholder-shown) {
+  border: 1px solid var(--input-error-state);
+  outline: transparent;
+  color: var(--input-error-state);
+}
+.icon-error {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  fill: transparent;
+}
+.sabs-input:invalid:not(:placeholder-shown) + .icon-error {
+  fill: var(--input-error-state);
 }
 
 .form-fild-checkbox {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .form-fild-checkbox {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .form-fild-checkbox {
+    margin-bottom: 33px;
+  }
 }
 .form-span-checkbox {
   width: 25px;
@@ -53,12 +115,29 @@
 }
 .subs_button {
   min-width: 224px;
-  padding: 17px 62px;
+  height: 50px;
   margin-bottom: 30px;
   border: none;
 }
-
+@media screen and (min-width: 768px) {
+  .subs_button {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subs_button {
+    margin-bottom: 0;
+    height: 52px;
+  }
+}
 .subs_button:hover,
 .subs_button:focus {
   background-color: var(--accent-stat-color);
+}
+@media screen and (min-width: 1440px) {
+  .sabs-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+  }
 }
