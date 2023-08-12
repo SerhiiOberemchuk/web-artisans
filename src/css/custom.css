@@ -15,6 +15,15 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+.price {
+  color: var(--primary-brand-color);
+  text-align: right;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5; /* 150% */
+}
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -35,6 +44,9 @@
   .subtitle_h2 {
     font-size: 32px;
     line-height: 1.41; /* 140.625% */
+  }
+  .price {
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1440px) {
