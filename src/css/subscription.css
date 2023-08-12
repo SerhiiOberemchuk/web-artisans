@@ -26,10 +26,12 @@
 }
 @media screen and (min-width: 1440px) {
   .subs-subtitle {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 }
-
+.subs-text {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .subs-text {
     margin-bottom: 20px;
@@ -37,13 +39,24 @@
 }
 @media screen and (min-width: 1440px) {
   .subs-text {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 }
 .sabs-input {
+  height: 50px;
   width: 100%;
-  padding: 12px 20px;
+  padding-left: 20px;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .sabs-input {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .sabs-input {
+    height: 52px;
+  }
 }
 .sabs-input:hover {
   border-color: var(--primary-brand-color);
@@ -88,7 +101,7 @@
 }
 @media screen and (min-width: 1440px) {
   .form-fild-checkbox {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 }
 .form-span-checkbox {
@@ -121,6 +134,8 @@
 }
 @media screen and (min-width: 768px) {
   .subs_button {
+    font-size: 18px;
+    line-height: 1.33;
     margin-bottom: 64px;
   }
 }
