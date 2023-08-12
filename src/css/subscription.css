@@ -1,0 +1,64 @@
+.subs-section {
+  padding: 64px 0;
+}
+.subs-box {
+  max-width: 536px;
+}
+.subs-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.subs-text {
+  margin-bottom: 30px;
+}
+.sabs-input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 11px 20px;
+  background-color: transparent;
+}
+.sabs-input:hover,
+.sabs-input:focus {
+  border-color: var(--primary-brand-color);
+  color: var(--primary-brand-color);
+}
+.sabs-input:required {
+  border-color: var(--input-error-state);
+}
+
+.form-fild-checkbox {
+  margin-bottom: 32px;
+}
+.form-span-checkbox {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--dark-grey);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+}
+
+.input-checkbox:checked + .form-label-condition > .form-span-checkbox {
+  border: none;
+  background-color: var(--primary-brand-color);
+  fill: var(--white-background-color);
+}
+.form-label-condition {
+  color: var(--checkbox-text);
+}
+.subs_button {
+  min-width: 224px;
+  padding: 17px 62px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.subs_button:hover,
+.subs_button:focus {
+  background-color: var(--accent-stat-color);
+}
