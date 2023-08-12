@@ -17,7 +17,6 @@
 }
 .price {
   color: var(--primary-brand-color);
-  text-align: right;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
