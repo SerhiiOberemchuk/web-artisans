@@ -12,6 +12,7 @@
 .subtitle_h2 {
   font-size: 28px;
   line-height: 1.5; /* 150% */
+  font-weight: 400;
   text-transform: uppercase;
 }
 @media screen and (min-width: 375px) {
