@@ -1,7 +1,7 @@
 .header {
   padding-top: 28px;
   padding-bottom: 28px;
-  background-color:#f7faff;
+  background-color: var(--light-blue-background-color);
 }
 
 .header-container {
@@ -22,7 +22,7 @@
 .header-btn {
   border: none;
   background-color: transparent;
-  color: #0A224A;
+  color: var(--primary-brand-color);
   padding: 0;
   width: 32px;
   height: 32px;
@@ -35,8 +35,8 @@
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #FFF;
-  z-index: 2;
+  background-color: var(--light-blue-background-color);
+  z-index: 3;
   transform: translateX(-100%);
   transition: transform 300ms ease-in-out;
 }
@@ -49,7 +49,7 @@
   padding: 28px 16px;
   align-items: center;
   justify-content: space-between;
-  background-color: #f7faff;
+  background-color: var(--light-blue-background-color);
 }
 
 .mob-menu-btn {
@@ -61,7 +61,7 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  color: #0A224A;
+  color: var(--primary-brand-color);
 }
 
 .mob-menu-nav {
