@@ -156,3 +156,141 @@
     }
   }
 }
+/* 
+
+------------      F O O T E R    
+
+ */
+.footer {
+  background-color: var(--primary-brand-color);
+  color: white;
+  max-width: 375px;
+  margin: 0 auto;
+  border: 3px solid red;
+}
+.footer-container-specifics {
+  padding-top: 100px;
+  padding-bottom: 16px;
+  position: relative;
+  border: 3px solid green;
+}
+.logo-socials-wrapper {
+  display: flex;
+  position: absolute;
+  top: 36px;
+  left: 16px;
+  right: 16px;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid blue;
+}
+.logo {
+}
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.social-item {
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 35px;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 64px;
+}
+.footer-email {
+  display: none;
+}
+.footer-paragraph {
+  text-align: center;
+}
+/* 
+
+------------      F O O T E R   ( 7 6 8 )    
+
+ */
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+  }
+  .footer-navigation {
+    position: absolute;
+    top: 44px;
+    left: 408px;
+  }
+  .logo-socials-wrapper {
+    left: 32px;
+    right: 32px;
+  }
+  .footer-container-specifics {
+    padding-top: 96px;
+    padding-bottom: 36px;
+  }
+  .footer-address {
+    margin-bottom: 64px;
+  }
+  .footer-email {
+    display: block;
+  }
+}
+/* 
+
+------------      F O O T E R   ( 1 4 4 0 )    
+
+ */
+@media screen and (min-width: 1440px) {
+  .footer {
+    max-width: 1440px;
+  }
+  .footer-navigation {
+    left: 404px;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 0px;
+  }
+  .logo-socials-wrapper {
+    left: 60px;
+    right: 60px;
+  }
+  .footer-container-specifics {
+    padding-top: 103px;
+  }
+  .footer-address {
+    gap: 24px;
+    margin-bottom: 0px;
+    margin-right: 87px;
+  }
+  .groups {
+    display: flex;
+  }
+  .footer-phone-1 {
+    order: 1;
+  }
+  .footer-phone-3 {
+    order: 3;
+  }
+  .footer-email-2 {
+    order: 2;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    width: calc((100% - 82px) / 2);
+    gap: 24px 82px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+}
