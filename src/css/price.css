@@ -1,6 +1,5 @@
-
-.price-container {
-    padding-bottom: 64px;
+.section-price{
+    padding-bottom: 100px;
 }
 
 .price-list {}
@@ -50,5 +49,13 @@
 .subtitle_h2:hover::before{
     display: block;
 }
+@media screen and (min-width: 1440px){
+    .container{
+        max-width: 1096px;
+    }
+}
+
+
+
 
 
