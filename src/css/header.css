@@ -10,11 +10,6 @@
   justify-content: space-between;
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-
 .header-menu {
   display: none;
 }
