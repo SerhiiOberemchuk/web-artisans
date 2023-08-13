@@ -63,14 +63,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .bestsellers {
-  }
   .bestsellers-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-  }
-  .bestsellers-item {
   }
   .main-picture {
     display: flex;
