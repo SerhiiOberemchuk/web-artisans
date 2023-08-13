@@ -1,50 +1,40 @@
 .hero {
-  /* max-width: 375px; */
-  /* margin: 0 auto; */
-}
-.container {
-  padding-top: 280px;
-  padding-bottom: 313px;
+  max-width: 375px;
+  margin: 0 auto;
   background-color: var(--light-blue-background-color);
   background-image: url(../img/hero-mob-1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.hero-container-specifics {
+  padding-bottom: 313px;
+  padding-top: 280px;
   position: relative;
 }
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .container {
+  .hero {
     background-image: url(../img/hero-mob-2x.webp);
   }
 }
 
-.hero-header {
+.hero-titel-specifics {
   position: absolute;
   top: 140px;
   left: 16px;
   z-index: 1;
-  color: var(--primary-brand-color);
-  /* font-family: Playfair Display; */
-  /* font-size: 28px; */
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5; /* 150% */
-  /* text-transform: uppercase; */
   max-width: 285px;
 }
-.hero-two-images {
-  display: none;
-}
-.hero-one-image {
-}
-.hero-content-wrapper {
-}
+
 .hero-paragraph {
   margin-bottom: 28px;
 }
-.hero-subscribe-link {
+
+.hero-subscribe-link-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,26 +43,31 @@
   color: var(--white-background-color);
   background-color: var(--primary-brand-color);
 }
-.hero-subscribe-link:hover,
-.hero-subscribe-link:focus {
+
+.hero-subscribe-link-btn:hover,
+.hero-subscribe-link-btn:focus {
   background-color: var(--accent-stat-color);
 }
+/* 
 
-@media screen and (min-width: 375px) {
-  .hero {
-    /* max-width: 375px; */
-  }
-}
 
+------------------    7 6 8
+
+
+ */
 @media screen and (min-width: 768px) {
-  .container {
-    /* max-width: 768px; */
+  .hero {
+    max-width: 1440px;
     background-color: var(--white-background-color);
     background-image: none;
+  }
+
+  .hero-container-specifics {
     padding-top: 61px;
     padding-bottom: 100px;
   }
-  .hero-two-images {
+
+  .hero-two-backgrounds {
     display: block;
     height: 531px;
     margin-bottom: 32px;
@@ -82,36 +77,45 @@
     background-repeat: no-repeat, no-repeat;
     background-position: bottom 0px left 0px, right 0px bottom 0px;
   }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-two-images {
+    .hero-two-backgrounds {
       background-image: url(../img/hero-left-desktop-tablet2x.webp),
         url(../img/hero-tablet2x.webp);
     }
   }
-  .hero-header {
+
+  .hero-titel-specifics {
     top: 64px;
     left: 32px;
-    /* font-size: 50px; */
     max-width: 648px;
   }
+
   .hero-paragraph {
-    /* font-size: 18px; */
     margin-bottom: 30px;
     max-width: 312px;
   }
-  .hero-subscribe-link {
+
+  .hero-subscribe-link-btn {
     height: 50px;
   }
 }
+/* 
 
+
+------------------    1 4 4 0
+
+
+ */
 @media screen and (min-width: 1440px) {
-  .hero-desktop-flex {
+  .hero-container-specifics {
     display: flex;
     gap: 25px;
   }
-  .hero-two-images {
+
+  .hero-two-backgrounds {
     height: 530px;
     margin-bottom: 0;
     background-image: url(../img/hero-left-desktop-tablet1x.webp),
@@ -119,18 +123,21 @@
     background-size: 310px 329px, 648px 530px;
     width: calc(310px + 25px + 648px);
   }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-two-images {
+    .hero-two-backgrounds {
       background-image: url(../img/hero-left-desktop-tablet2x.webp),
         url(../img/hero-middle-desktop2x.webp);
     }
   }
-  .hero-header {
+
+  .hero-titel-specifics {
     left: 60px;
   }
-  .hero-one-image {
+
+  .hero-third-background {
     max-width: 312px;
     height: 337px;
     margin-bottom: 59px;
@@ -140,10 +147,11 @@
     background-position: center;
     background-size: cover;
   }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .container {
+    .hero-third-background {
       background-image: url(../img/hero-right-desktop2x.webp);
     }
   }
