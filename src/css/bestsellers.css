@@ -15,6 +15,11 @@
   flex-wrap: wrap;
   gap: 32px;
 }
+.four-picture {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
 
 .bestsellers-img-mob {
   margin-bottom: 14px;
@@ -68,9 +73,7 @@
     justify-content: center;
     gap: 24px;
   }
-  .main-picture {
-    display: flex;
-  }
+
   .four-picture {
     max-width: 536px;
     margin: 0;
