@@ -35,9 +35,6 @@
     flex-direction: row;
     gap: 16px;
   }
-  .our-product-item {
-    width: calc((100% - 16px) / 2);
-  }
   .our-product-item-a {
     gap: 15px;
   }
@@ -64,8 +61,5 @@
     display: flex;
     flex-direction: column;
     gap: 15px; 
-  }
-  .our-product-item {
-    width: calc((100% - 72px) / 4);
   }
 }
