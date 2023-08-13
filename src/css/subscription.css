@@ -62,9 +62,7 @@
   border-color: var(--primary-brand-color);
   color: var(--primary-brand-color);
 }
-/* .sabs-input:required {
-  border-color: var(--input-error-state);
-} */
+
 .subs-wrapper {
   position: relative;
   margin-bottom: 20px;
@@ -131,6 +129,7 @@
   height: 50px;
   margin-bottom: 30px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .subs_button {
@@ -152,7 +151,7 @@
 @media screen and (min-width: 1440px) {
   .sabs-container {
     display: flex;
-    gap: 100px;
-    justify-content: center;
+    max-width: 1216px;
+    justify-content: space-between;
   }
 }
