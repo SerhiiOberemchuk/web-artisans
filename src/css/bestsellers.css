@@ -9,21 +9,12 @@
   margin-bottom: 21px;
   font-weight: 400;
 }
-.bestsellers-list {
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 32px; */
-}
+
 .bestsellers-item:first-child {
   margin-bottom: 32px;
 }
 .main-picture {
   margin-bottom: 32px;
-}
-.four-picture {
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 32px; */
 }
 
 .bestsellers-img-mob {
@@ -75,6 +66,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .second-container {
+    max-width: 1268px;
+  }
   .bestsellers-list {
     display: flex;
     justify-content: center;
