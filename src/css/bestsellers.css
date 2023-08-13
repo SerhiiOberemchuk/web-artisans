@@ -81,7 +81,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
-    row-gap: 30px;
+    row-gap: 24px;
     width: calc((100% - 20px) / 2);
   }
 }
