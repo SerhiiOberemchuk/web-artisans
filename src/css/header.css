@@ -118,10 +118,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .header-navigation {
-    display: flex;
-    gap: 572px;
-  }
+  
   .header-menu {
     display: flex;
     gap: 30px;
