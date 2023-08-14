@@ -167,11 +167,11 @@
   max-width: 375px;
   margin: 0 auto;
   border: 3px solid red;
-}
-.footer-container-specifics {
   padding-top: 100px;
   padding-bottom: 16px;
   position: relative;
+}
+.border-color {
   border: 3px solid green;
 }
 .logo-socials-wrapper {
@@ -190,9 +190,6 @@
   display: flex;
   gap: 16px;
 }
-.social-item {
-}
-
 .footer-navigation {
   display: flex;
   flex-direction: column;
@@ -221,24 +218,24 @@
 
 ------------      F O O T E R   ( 7 6 8 )    
 
- */
+*/
 @media screen and (min-width: 768px) {
   .footer {
     max-width: 768px;
+    padding-top: 96px;
+    padding-bottom: 36px;
   }
   .footer-navigation {
     position: absolute;
     top: 44px;
     left: 408px;
+    margin-bottom: 0px;
   }
   .logo-socials-wrapper {
     left: 32px;
     right: 32px;
   }
-  .footer-container-specifics {
-    padding-top: 96px;
-    padding-bottom: 36px;
-  }
+
   .footer-address {
     margin-bottom: 64px;
   }
@@ -254,6 +251,7 @@
 @media screen and (min-width: 1440px) {
   .footer {
     max-width: 1440px;
+    padding-top: 103px;
   }
   .footer-navigation {
     left: 404px;
@@ -264,9 +262,6 @@
   .logo-socials-wrapper {
     left: 60px;
     right: 60px;
-  }
-  .footer-container-specifics {
-    padding-top: 103px;
   }
   .footer-address {
     gap: 24px;
