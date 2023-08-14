@@ -149,8 +149,8 @@
   }
 
   .footer-address-item:not(:last-child) {
-  margin-bottom: 24px;
-}
+    margin-bottom: 24px;
+  }
 
   .footer-contacts-item:not(:last-child) {
     margin-bottom: 24px;
@@ -179,18 +179,18 @@
 /*------- media 1440px -------*/
 
 @media screen and (min-width: 1440px) {
-  .container {
+  /* .container {
     max-width: 1440px;
-  }
+  } */
 
   .footer-logo-socials {
     margin-bottom: 27px;
   }
 
   .footer-social-list {
-  display: flex;
-  gap: 30px;
-}
+    display: flex;
+    gap: 30px;
+  }
 
   .footer-nav-list {
     display: flex;
