@@ -1,0 +1,143 @@
+.about-us-section {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+.about-us-container {
+  padding: 64px 0;
+}
+.container-background {
+  background-color: var(--light-blue-background-color);
+}
+.name-of-section {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.name-of-section::before {
+  width: 30px;
+  height: 1px;
+  background-color: var(--primary-brand-color);
+  content: '';
+}
+.about-us-title {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.about-us-description {
+  margin-bottom: 30px;
+}
+.about-us-advantages-item {
+  margin: 0 auto;
+  max-width: 170px;
+}
+.about-us-advantages-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about-us-advantages-quantity {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.about-us-advantages-text {
+  text-align: center;
+}
+.about-us-picture {
+  display: none;
+}
+.img-for-mobile {
+  height: 400px;
+  background-color: var(--dark-grey);
+  background-image: url(../img/about-us-mobile-1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .img-for-mobile {
+    background-image: url(../img/about-us-mobile-2x.webp);
+  }
+}
+/* 
+-----    A B O U T   U S   ( 7 6 8 ) 
+ */
+@media screen and (min-width: 768px) {
+  .img-for-mobile {
+    display: none;
+  }
+  .about-us-section {
+    max-width: 768px;
+    padding-bottom: 100px;
+  }
+  .container-background {
+    background-color: var(--white-background-color);
+  }
+  .about-us-container {
+    background-color: var(--light-blue-background-color);
+    padding: 36px 64px;
+    margin-bottom: 30px;
+  }
+  .about-us-title {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .about-us-description {
+    font-size: 18px;
+  }
+  .about-us-advantages-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-us-advantages-item {
+    margin: 0;
+  }
+  .about-us-advantages-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .about-us-advantages-text {
+    font-size: 18px;
+  }
+  .about-us-picture {
+    display: block;
+    width: 704px;
+  }
+}
+/* 
+------- A B O U T   U S   ( 1 4 4 0 ) 
+ */
+@media screen and (min-width: 1440px) {
+  .about-us-section {
+    max-width: 1440px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .container-flex {
+    display: flex;
+    gap: 24px;
+  }
+  .about-us-container {
+    padding: 36px 69px;
+    max-width: 760px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+  .about-us-description {
+    max-width: 622px;
+  }
+  .about-us-advantages-quantity {
+    margin-bottom: 23px;
+  }
+  .about-us-picture {
+    display: flex;
+    width: 536px;
+  }
+}
