@@ -30,40 +30,43 @@
         </li>
       </ul>
     </div>
+    <picture class="about-us-picture">
+      <source
+        class="about-us-image"
+        srcset="
+          ../img/about-us-desktop1x.webp 1x,
+          ../img/about-us-desktop2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+        width="536"
+        height="540"
+      />
+      <source
+        class="about-us-image"
+        srcset="
+          ./img/about-us-tablet1x.webp 1x,
+          ./img/about-us-tablet2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        width="704"
+        height="540"
+      />
+      <source
+        class="about-us-image"
+        srcset="
+          ./img/about-us-mobile-1x.webp 1x,
+          ./img/about-us-mobile-2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        width="767"
+        height="400"
+      />
+      <img
+        class="about-us-image"
+        src="./img/about-us-desktop1x.webp"
+        alt="furniture"
+        width="767"
+      />
+    </picture>
   </div>
-  <picture class="about-us-picture">
-    <source
-      class="about-us-image"
-      srcset="
-        ../img/about-us-desktop1x.webp 1x,
-        ../img/about-us-desktop2x.webp 2x
-      "
-      media="(min-width: 1440px)"
-      width="536"
-      height="540"
-    />
-    <source
-      class="about-us-image"
-      srcset="./img/about-us-tablet1x.webp 1x, ./img/about-us-tablet2x.webp 2x"
-      media="(min-width: 768px)"
-      width="704"
-      height="540"
-    />
-    <source
-      class="about-us-image"
-      srcset="
-        ./img/about-us-mobile-1x.webp 1x,
-        ./img/about-us-mobile-2x.webp 2x
-      "
-      media="(max-width: 767px)"
-      width="767"
-      height="400"
-    />
-    <img
-      class="about-us-image"
-      src="./img/about-us-desktop1x.webp"
-      alt="furniture"
-      width="767"
-    />
-  </picture>
 </section>

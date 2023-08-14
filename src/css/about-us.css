@@ -2,7 +2,6 @@
   padding-bottom: 64px;
   background-color: var(--light-blue-background-color);
 }
-
 .about-us-container {
   padding: 64px 0;
 }
@@ -20,7 +19,6 @@
   background-color: var(--primary-brand-color);
   content: '';
 }
-
 .about-us-title {
   font-size: 28px;
   font-weight: 400;
@@ -45,9 +43,6 @@
 }
 .about-us-advantages-text {
   text-align: center;
-}
-.about-us-picture {
-  width: 375px;
 }
 
 @media screen and (min-width: 768px) {
@@ -88,12 +83,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .about-us-section {
+  .about-us-section .container {
     display: flex;
     gap: 24px;
     align-items: center;
   }
-
   .about-us-container {
     padding: 36px 69px;
     max-width: 760px;
