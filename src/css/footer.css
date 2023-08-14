@@ -98,32 +98,21 @@
   }
 
   .link {
-    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .link:hover,
   .link:focus {
-    font-size: 20px;
-    box-shadow: 0px 2px 1px rgba(152, 156, 187, 0.08),
-      0px 0px 1px rgba(152, 156, 187, 0.08),
-      0px 1px 4px rgba(139, 144, 184, 0.08);
+    text-decoration: underline;
   }
 
   .social-icon {
-    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      height 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .social-icon:hover,
   .social-icon:focus {
-    width: 42px;
-    height: 42px;
-    box-shadow: 0px 2px 1px rgba(152, 156, 187, 0.08),
-      0px 0px 1px rgba(152, 156, 187, 0.08),
-      0px 1px 4px rgba(139, 144, 184, 0.08);
+      fill: var(--checkbox-text);
   }
 
   .footer-nav-list {
@@ -160,16 +149,12 @@
   }
 
   .term-privacy-link {
-    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .term-privacy-link:hover,
   .term-privacy-link:focus {
-    font-size: 17px;
-    box-shadow: 0px 2px 1px rgba(152, 156, 187, 0.08),
-      0px 0px 1px rgba(152, 156, 187, 0.08),
-      0px 1px 4px rgba(139, 144, 184, 0.08);
+      text-decoration-color:  var(--checkbox-text);
   }
 }
 
