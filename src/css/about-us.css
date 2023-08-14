@@ -1,0 +1,108 @@
+.about-us-section {
+  padding-bottom: 64px;
+  background-color: var(--light-blue-background-color);
+}
+
+.about-us-container {
+  padding: 64px 0;
+}
+.name-of-section {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.name-of-section::before {
+  width: 30px;
+  height: 1px;
+  background-color: var(--primary-brand-color);
+  content: '';
+}
+
+.about-us-title {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.about-us-description {
+  margin-bottom: 30px;
+}
+.about-us-advantages-item {
+  margin: 0 auto;
+  max-width: 170px;
+}
+.about-us-advantages-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about-us-advantages-quantity {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.about-us-advantages-text {
+  text-align: center;
+}
+.about-us-picture {
+  width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-section {
+    padding-bottom: 100px;
+    background-color: var(--white-background-color);
+  }
+  .about-us-container {
+    background-color: var(--light-blue-background-color);
+    padding: 36px 64px;
+    margin-bottom: 30px;
+  }
+  .about-us-title {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .about-us-description {
+    font-size: 18px;
+  }
+  .about-us-advantages-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-us-advantages-item {
+    margin: 0;
+  }
+  .about-us-advantages-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .about-us-advantages-text {
+    font-size: 18px;
+  }
+  .about-us-picture {
+    display: block;
+    width: 704px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us-section {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .about-us-container {
+    padding: 36px 69px;
+    max-width: 760px;
+    margin-bottom: 0;
+  }
+  .about-us-description {
+    max-width: 622px;
+  }
+  .about-us-advantages-quantity {
+    margin-bottom: 23px;
+  }
+}
