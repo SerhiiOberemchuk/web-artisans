@@ -1,5 +1,5 @@
-<section id="about us" class="about-us-section">
-  <div class="container">
+<section id="about-us" class="about-us-section">
+  <div class="container container-flex container-background">
     <div class="about-us-container">
       <h2 class="name-of-section">About us</h2>
       <h3 class="about-us-title">
@@ -34,8 +34,8 @@
       <source
         class="about-us-image"
         srcset="
-          ../img/about-us-desktop1x.webp 1x,
-          ../img/about-us-desktop2x.webp 2x
+          ./img/about-us-desktop1x.webp 1x,
+          ./img/about-us-desktop2x.webp 2x
         "
         media="(min-width: 1440px)"
         width="536"
@@ -51,7 +51,7 @@
         width="704"
         height="540"
       />
-      <source
+      <!-- <source
         class="about-us-image"
         srcset="
           ./img/about-us-mobile-1x.webp 1x,
@@ -60,13 +60,14 @@
         media="(max-width: 767px)"
         width="767"
         height="400"
-      />
+      /> -->
       <img
         class="about-us-image"
         src="./img/about-us-desktop1x.webp"
         alt="furniture"
-        width="767"
+        width="676"
       />
     </picture>
   </div>
+  <div class="container img-for-mobile"></div>
 </section>
