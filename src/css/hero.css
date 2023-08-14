@@ -6,9 +6,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.hero-container-specifics {
   padding-bottom: 313px;
   padding-top: 280px;
   position: relative;
@@ -57,16 +54,12 @@
  */
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 1440px;
+    max-width: 768px;
     background-color: var(--white-background-color);
     background-image: none;
-  }
-
-  .hero-container-specifics {
     padding-top: 61px;
     padding-bottom: 100px;
   }
-
   .hero-two-backgrounds {
     display: block;
     height: 531px;
@@ -110,6 +103,9 @@
 
  */
 @media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+  }
   .hero-container-specifics {
     display: flex;
     gap: 25px;
