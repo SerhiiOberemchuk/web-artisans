@@ -41,14 +41,17 @@
   font-weight: 700;
   line-height: 1.77; /* 177.778% */
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 @media screen and (min-width: 768px) {
   .reviewr-name {
+    margin-bottom: 4px;
     font-size: 20px;
     line-height: 2.25; /* 225% */
   }
 }
 .review-time {
+  opacity: 0.8;
   font-size: 14px;
   line-height: 1.29; /* 128.571% */
 }
@@ -76,8 +79,6 @@
 .review-img {
   margin-top: auto;
   margin-bottom: auto;
-  width: 48px;
-  height: 48px;
 }
 .review-text {
   font-size: 14px;
