@@ -13,6 +13,17 @@
 }
 .subs-box {
   max-width: 536px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .subs-box {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subs-box {
+    margin-bottom: 0;
+  }
 }
 .subs-subtitle {
   text-align: center;
@@ -126,8 +137,7 @@
 }
 .subs_button {
   min-width: 224px;
-  height: 50px;
-  margin-bottom: 30px;
+  padding: 13px 0;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -135,13 +145,12 @@
   .subs_button {
     font-size: 18px;
     line-height: 1.33;
-    margin-bottom: 64px;
+    padding: 14px 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .subs_button {
     margin-bottom: 0;
-    height: 52px;
   }
 }
 .subs_button:hover,
