@@ -1,14 +1,28 @@
 .about-us-section {
-  max-width: 375px;
+  /* max-width: 375px; */
   margin: 0 auto;
   padding-bottom: 64px;
 }
 .about-us-container {
-  padding: 64px 0;
-}
-.container-background {
+  padding: 64px 16px;
   background-color: var(--light-blue-background-color);
 }
+@media screen and (min-width: 768px) {
+  .aboutus-container {
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .aboutus-container {
+    max-width: 1440px;
+    padding: 0 60px;
+    display: flex;
+    gap: 24px;
+  }
+}
+/* .container-background {
+  background-color: var(--light-blue-background-color);
+} */
 .name-of-section {
   font-size: 16px;
   font-weight: 400;
@@ -48,33 +62,33 @@
 .about-us-advantages-text {
   text-align: center;
 }
-.about-us-picture {
+/* .about-us-picture {
   display: none;
-}
-.img-for-mobile {
+} */
+/* .img-for-mobile {
   height: 400px;
   background-color: var(--dark-grey);
   background-image: url(../img/about-us-mobile-1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-@media (min-device-pixel-ratio: 2),
+} */
+/* @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .img-for-mobile {
     background-image: url(../img/about-us-mobile-2x.webp);
   }
-}
+} */
 /* 
 -----    A B O U T   U S   ( 7 6 8 ) 
  */
 @media screen and (min-width: 768px) {
-  .img-for-mobile {
+  /* .img-for-mobile {
     display: none;
-  }
+  } */
   .about-us-section {
-    max-width: 768px;
+    /* max-width: 768px; */
     padding-bottom: 100px;
   }
   .container-background {
@@ -105,30 +119,35 @@
   .about-us-advantages-text {
     font-size: 18px;
   }
-  .about-us-picture {
+  /* .about-us-picture {
     display: block;
     width: 704px;
-  }
+  } */
 }
 /* 
 ------- A B O U T   U S   ( 1 4 4 0 ) 
  */
 @media screen and (min-width: 1440px) {
-  .about-us-section {
+  .aboutus-container {
+    max-width: 1440px;
+  }
+  /* .about-us-section {
     max-width: 1440px;
     display: flex;
     gap: 24px;
     align-items: center;
-  }
-  .container-flex {
+  } */
+  /* .container-flex {
     display: flex;
     gap: 24px;
-  }
+  } */
   .about-us-container {
     padding: 36px 69px;
     max-width: 760px;
-    margin-top: 21px;
-    margin-bottom: 21px;
+    /* margin-top: 21px;
+    margin-bottom: 21px; */
+    margin-bottom: auto;
+    margin-top: auto;
   }
   .about-us-description {
     max-width: 622px;
@@ -136,8 +155,11 @@
   .about-us-advantages-quantity {
     margin-bottom: 23px;
   }
-  .about-us-picture {
+  /* .about-us-picture {
     display: flex;
     width: 536px;
+  } */
+  .about-us-image {
+    max-width: 536px;
   }
 }
