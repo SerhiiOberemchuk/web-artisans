@@ -1,5 +1,4 @@
 .about-us-section {
-  /* max-width: 375px; */
   margin: 0 auto;
   padding-bottom: 64px;
 }
@@ -7,8 +6,16 @@
   padding: 64px 16px;
   background-color: var(--light-blue-background-color);
 }
+
+@media screen and (min-width: 375px) {
+  .aboutus-container {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .aboutus-container {
+    max-width: 768px;
     padding: 0 32px;
   }
 }
