@@ -4,6 +4,11 @@
 .not-mobile {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .not-mobile {
+    display: block;
+  }
+}
 .bestsellers-tittle {
   text-align: center;
   margin-bottom: 21px;
@@ -11,10 +16,15 @@
 }
 
 .bestsellers-item:first-child {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .main-picture {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .main-picture {
+    margin-bottom: 32px;
+  }
 }
 
 .bestsellers-img-mob {
@@ -47,12 +57,6 @@
     margin-bottom: 0;
   }
 
-  .bestsellers-item {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
   .bestsellers-tittle {
     margin-bottom: 30px;
     line-height: 1.4;
@@ -69,8 +73,6 @@
 @media screen and (min-width: 1440px) {
   .our-bestsellers {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     gap: 24px;
   }
   .second-container {
@@ -82,8 +84,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 20px;
-    row-gap: 24px;
+    column-gap: 20px;
+    row-gap: 30px;
   }
   .main-picture {
     margin-bottom: 0;
