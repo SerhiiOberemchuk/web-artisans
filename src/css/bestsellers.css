@@ -85,7 +85,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     column-gap: 20px;
-    row-gap: 30px;
+    row-gap: 25px;
   }
   .main-picture {
     margin-bottom: 0;
