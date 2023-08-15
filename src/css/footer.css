@@ -125,8 +125,7 @@
 
   .footer-nav-list {
     position: absolute;
-    /* top: 40px; */
-    top: 0;
+    top: 5px;
     left: 408px;
     margin-bottom: 0;
   }
@@ -186,8 +185,6 @@
   .container {
     max-width: 1440px;
   }
-
-
 
   .footer-logo-socials {
     margin-bottom: 27px;
