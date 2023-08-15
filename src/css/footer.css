@@ -1,12 +1,12 @@
 .footer {
   background-color: var(--primary-brand-color);
   color: var(--white-background-color);
+  padding-top: 36px;
+  padding-bottom: 16px;
 }
 
 .footer-container {
   position: relative;
-  padding-top: 36px;
-  padding-bottom: 16px;
 }
 
 .footer-logo-socials {
@@ -93,8 +93,11 @@
 /*------- media 768px -------*/
 
 @media screen and (min-width: 768px) {
-  .footer-container {
+  .footer {
     padding-bottom: 36px;
+  }
+
+  .footer-container {
     font-size: 19px;
   }
 
@@ -122,7 +125,8 @@
 
   .footer-nav-list {
     position: absolute;
-    top: 40px;
+    /* top: 40px; */
+    top: 0;
     left: 408px;
     margin-bottom: 0;
   }
@@ -149,8 +153,8 @@
   }
 
   .footer-address-item:not(:last-child) {
-  margin-bottom: 24px;
-}
+    margin-bottom: 24px;
+  }
 
   .footer-contacts-item:not(:last-child) {
     margin-bottom: 24px;
@@ -183,14 +187,16 @@
     max-width: 1440px;
   }
 
+
+
   .footer-logo-socials {
     margin-bottom: 27px;
   }
 
   .footer-social-list {
-  display: flex;
-  gap: 30px;
-}
+    display: flex;
+    gap: 30px;
+  }
 
   .footer-nav-list {
     display: flex;
