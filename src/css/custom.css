@@ -79,3 +79,27 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+.header .link-underline::after {
+  background-color: var(--primary-brand-color);
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white-background-color);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.link-underline:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
