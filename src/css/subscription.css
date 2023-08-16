@@ -1,6 +1,75 @@
 .subs-section {
   padding: 64px 0;
 }
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.thanks {
+  max-width: 100%;
+  height: 288px;
+  /* width: 536px;
+  height: 410px; */
+  text-align: center;
+  margin-bottom: 30px;
+}
+.thanks-approval {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.subscription-form {
+  opacity: 1;
+  transition: background-color 0.5s ease-in-out;
+}
+.subs_form {
+  transition: opacity 0.5s ease-in-out;
+}
+.approval-icon {
+  fill: var(--primary-brand-color);
+  margin-bottom: 12px;
+}
+.thanks-text {
+  color: var(--primary-brand-color);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+}
+.thanks-text:first-child {
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 375px) {
+  .thanks {
+    width: 343px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .thanks {
+    width: 704px;
+    height: 312px;
+    margin-bottom: 64px;
+  }
+  .thanks-text {
+    font-size: 24px;
+  }
+  .thanks-text:first-child {
+    margin-bottom: 24px;
+  }
+  .approval-icon {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .thanks {
+    width: 536px;
+    margin-bottom: 0;
+    height: 410px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .subs-section {
     padding: 100px 0;
