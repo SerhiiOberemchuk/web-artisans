@@ -19,10 +19,11 @@
 
 .review-list {
   display: flex;
-  gap: 16px;
+  margin-bottom: 35px;
 }
 
 .review-item {
+  display: block;
   background-color: var(--white-background-color);
   border-radius: 8px;
   padding: 24px;
@@ -30,11 +31,10 @@
 @media screen and (min-width: 1440px) {
   .review-item {
     padding: 32px;
+    max-width: 424px;
   }
 }
-.review-item:not(:first-child) {
-  display: none;
-}
+
 .reviewr-name {
   font-size: 18px;
   font-weight: 700;
@@ -95,20 +95,15 @@
   .review-item {
     width: calc((100% - 1 * 16px) / 2);
   }
-  .review-item:not(:last-child) {
-    display: block;
-  }
+
   .review-text {
     font-size: 18px;
     line-height: 1.5; /* 150% */
   }
 }
 @media screen and (min-width: 1440px) {
-  .review-item:last-child {
-    display: block;
-  }
   .review-list {
-    gap: 24px;
+    margin-bottom: 35px;
   }
   .review-item {
     width: calc((100% - 2 * 24px) / 3);

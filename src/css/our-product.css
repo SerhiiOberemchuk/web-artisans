@@ -37,7 +37,6 @@
   .our-product-list {
     display: flex;
     flex-direction: row;
-    /* gap: 16px; */
   }
   .our-product-item {
     max-width: 344px;
@@ -50,9 +49,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .our-product-list {
-    /* gap: 24px; */
-  }
   .our-product-item-c {
     display: flex;
   }
