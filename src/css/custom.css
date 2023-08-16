@@ -27,6 +27,14 @@ html {
   font-weight: 700;
   line-height: 1.5; /* 150% */
 }
+.link {
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
