@@ -1,51 +1,103 @@
 <section id="subscription" class="subs-section">
-    <div class="sabs-container container ">
-        <div class="subs-box">
-            <h2 class="subtitle_h2 subs-subtitle">Newsletter</h2>
-            <p class="subs-text">Every week we will send you new designs and information about sales.</p>
-            <form class="subs_form">
-                <label class="sabs-label"></label>
-                <div class="subs-wrapper">
-                    <input type="text" name="user-name" placeholder="Name" class="sabs-input" required minlength="2"
-                        maxlength="16">
-                    <svg width="24" height="24" class="icon-error">
-                        <use href="./img/minimal-icons.svg#icon-error-form"></use>
-                    </svg>
-                </div>
-                <label class="sabs-label" for="user-email"></label>
-                <div class="subs-wrapper">
-                    <input type="email" name="user-email" id="user-email" placeholder="E-mail" class="sabs-input"
-                        required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
-                    <svg width="24" height="24" class="icon-error">
-                        <use href="./img/minimal-icons.svg#icon-error-form"></use>
-                    </svg>
-                </div>
-                <div class="form-fild-checkbox">
-                    <input type="checkbox" name="user-privacy" class="input-checkbox visually-hidden" value="true"
-                        id="user-privacy" required>
-                    <label for="user-privacy" class="form-label-condition">
-                        <span class="form-span-checkbox">
-                            <svg class="icons-checkbox" width="13" height="13">
-                                <use href="./img/minimal-icons.svg#icon-check">
-                                </use>
-                            </svg>
-                        </span>Agree to subscribe to the newsletter
-                    </label>
-                </div>
-                <button type="submit" class="subs_button">Send</button>
-            </form>
+  <div class="sabs-container container">
+    <div id="subscription-form" class="subs-box">
+      <h2 class="subtitle_h2 subs-subtitle">Newsletter</h2>
+      <p class="subs-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="subs_form">
+        <label class="sabs-label" for="user-name"></label>
+        <div class="subs-wrapper">
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            class="sabs-input"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+          <svg width="24" height="24" class="icon-error">
+            <use href="./img/minimal-icons.svg#icon-error-form"></use>
+          </svg>
         </div>
-        <div class="subs-picture">
-            <picture>
-                <source srcset="./img/newsletter-desktop-1x.webp 1x,
-            ./img/newsletter-desktop-2x.webp 2x" media="(min-width: 1440px)">
-                <source srcset="./img/newsletter-tablet-1x.webp 1x,
-            ./img/newsletter-tablet-2x.webp 2x" media="(min-width: 768px)">
-                <source srcset="./img/newsletter-mobile-1x.webp 1x,
-            ./img/newsletter-mobile-2x.webp 2x" media="(max-width: 767px)">
-                <img class="subs-img" src="./img/newsletter-desktop-1x.webp"
-                    alt="Near the sofa is a table and on the table is a book and flowers" width="704">
-            </picture>
+        <label class="sabs-label" for="user-email"></label>
+        <div class="subs-wrapper">
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="E-mail"
+            class="sabs-input"
+            required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <svg width="24" height="24" class="icon-error">
+            <use href="./img/minimal-icons.svg#icon-error-form"></use>
+          </svg>
         </div>
+        <div class="form-fild-checkbox">
+          <input
+            type="checkbox"
+            name="user-privacy"
+            class="input-checkbox visually-hidden"
+            value="true"
+            id="user-privacy"
+            required
+          />
+          <label for="user-privacy" class="form-label-condition">
+            <span class="form-span-checkbox">
+              <svg class="icons-checkbox" width="13" height="13">
+                <use href="./img/minimal-icons.svg#icon-check"></use>
+              </svg> </span
+            >Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button id="submit-button" type="submit" class="subs_button">
+          Send
+        </button>
+      </form>
     </div>
+    <div id="thank-you" class="thanks hidden">
+      <div class="thanks-approval">
+        <p class="thanks-text">We appreciate your subscription.</p>
+        <svg width="76" height="76" class="approval-icon">
+          <use href="./img/minimal-icons.svg#icon-approval"></use>
+        </svg>
+        <p class="thanks-text">Get ready for exciting updates!</p>
+      </div>
+    </div>
+    <div class="subs-picture">
+      <picture>
+        <source
+          srcset="
+            ./img/newsletter-desktop-1x.webp 1x,
+            ./img/newsletter-desktop-2x.webp 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./img/newsletter-tablet-1x.webp 1x,
+            ./img/newsletter-tablet-2x.webp 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/newsletter-mobile-1x.webp 1x,
+            ./img/newsletter-mobile-2x.webp 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="subs-img"
+          src="./img/newsletter-desktop-1x.webp"
+          alt="Near the sofa is a table and on the table is a book and flowers"
+          width="704"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
