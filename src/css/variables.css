@@ -19,18 +19,14 @@ body {
 }
 input {
   color: var(--input-normal-grey);
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5; /* 150% */
   border: 1px solid var(--dark-grey);
 }
 button {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5; /* 150% */
   background-color: var(--primary-brand-color);
   color: var(--white-background-color);
